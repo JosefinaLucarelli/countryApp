@@ -1,34 +1,7 @@
-import {
-  Stat,
-  StatLabel,
-  StatNumber,
-  StatHelpText,
-  StatArrow,
-  StatGroup,
-} from '@chakra-ui/react'
-
 const App = () => {
   return (
-    <StatGroup>
-      <Stat>
-        <StatLabel>Sent</StatLabel>
-        <StatNumber>345,670</StatNumber>
-        <StatHelpText>
-          <StatArrow type='increase' />
-          23.36%
-        </StatHelpText>
-      </Stat>
-
-      <Stat>
-        <StatLabel>Clicked</StatLabel>
-        <StatNumber>45</StatNumber>
-        <StatHelpText>
-          <StatArrow type='decrease' />
-          9.05%
-        </StatHelpText>
-      </Stat>
-    </StatGroup>
-  )
+    <h1>HELLO WORLD</h1>
+   )
 }
 
 export default App;
