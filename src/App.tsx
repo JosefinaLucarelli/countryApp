@@ -1,8 +1,15 @@
+import Button from "./components/Button";
 import Input from "./components/Input";
 
 const App = () => {
   return (
-    <Input></Input>
+    <>
+    <Input />
+    <Button label="Africa"/>
+    <Button label="Oceania"/>
+    <Button label="America" />
+    <Button label="Europa" />
+    </>
    )
 }
 
