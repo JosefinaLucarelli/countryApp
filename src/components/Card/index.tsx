@@ -6,11 +6,11 @@ type Props = {
 }
 const Card = (props: Props) => {
     return (
-<div className={styles.card}>
-    <img src={props.img} alt='country image' width='100px' />
-    <h1>{props.label}</h1>
-</div>
+        <div className={styles.card}>
+            <img src={props.img} alt='country image' width='100px' />
+            <h1>{props.label}</h1>
+        </div>
     )
-} 
+}
 
 export default Card;
