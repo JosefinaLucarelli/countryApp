@@ -5,9 +5,10 @@
         background: #ADF4D1;
         border: 2px solid #0B5431;
         border-radius: 8px;
-        height: 25px;
+        height: 45px;
         width: 95%;
         display: flex;
+        font-size: 30px;
         padding: 0;
         padding-left: 10px;
         &:focus-visible{
@@ -16,10 +17,10 @@
     
     }
     &::after{
-        content: url('./image2.png');
+        content: url('./image3.png');
         position: absolute;
-        right: 35px;
-        top: 5px;
+        right: 20px;
+        top: 8px;
     }
 }
 

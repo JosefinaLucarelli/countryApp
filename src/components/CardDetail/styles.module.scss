@@ -1,12 +1,14 @@
+@import '/src/scss/variables/colors';
+
 .cardDetail {
     width: 300px;
     height: 400px;
     border-radius: 8px;
-    background-color: #0B5431;
+    background-color: $green;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    color: white;
+    justify-content: space-between;
+    color: $white;
     padding: 10px;
 
     .item{
@@ -19,6 +21,21 @@
         .content{
             margin: 0;
             margin-bottom: 10px;
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+
+        .tag{
+            background-color: $white;
+            border-radius: 5px;
+            color: $green;
+            display: flex;
+            padding: 3px;
         }
     }
 }
