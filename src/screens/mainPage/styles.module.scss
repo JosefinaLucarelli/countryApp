@@ -1,0 +1,26 @@
+@import '/src/scss/variables/colors';
+.container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    margin: 200px auto;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    
+    &::after{
+        content: url('./imageWorld.png');
+        position: absolute;
+        top: -74px;
+        left: 35%;
+        z-index: -1;  //para poner un elemento atras de otro
+    }
+
+    .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    }
+
+}
