@@ -6,6 +6,7 @@ import {  createBrowserRouter,  RouterProvider,} from "react-router-dom";
 import MainPage from './screens/mainPage';
 import RegionDetail from './screens/mainPage/RegionDetail';
 import CoutryDetail from './screens/mainPage/CountryDetail';
+import Game from './screens/mainPage/Game';
 
 const router = createBrowserRouter([  
   {    path: "/",
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "country/:countryName",
     element: <CoutryDetail />
+  },
+  {
+    path: "game",
+    element: <Game />
   }
 ]);
 

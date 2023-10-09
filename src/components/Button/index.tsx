@@ -1,10 +1,12 @@
 import styles from './styles.module.scss'
 type Props = {
     label: string
+    onclick?: () => void;
 }
-const Button = ({label}: Props) =>{
+const Button = ({label, onclick=() => {}}: Props) =>{
     return(
-        <button className={styles.button}>{label}</button>
+        <button className={styles.button}
+        onClick={onclick}>{label}</button>
     )
 }
 
