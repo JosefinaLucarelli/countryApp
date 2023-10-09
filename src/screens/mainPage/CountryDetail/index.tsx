@@ -1,20 +1,17 @@
-import { useParams } from "react-router-dom";
-import Card from "../../../components/Card";
-import Input from "../../../components/Input";
+import CardDetail from "../../../components/CardDetail";
 import styles from "./styles.module.scss";
 
-const CountryDetail = () => {
-    const paramas = useParams();
-    const countries  = ["Japan", "China", "South Korea"];
-    const countriesMap = countries.map((country) => <Card img="https://flagcdn.com/jp.svg" label={country} />);
-
-    return(
-        <div className={styles.container}>
-            <h1>{paramas.regionName}</h1>
-            <Input />
-            {countriesMap}
+const CoutryDetail = () => {
+    return (
+        <div className={styles.container}> 
+            <div>
+                <img src="https://flagcdn.com/jp.svg" alt="japan" width= "200px" />
+                <h1 className={styles.title}>JAPAN</h1>
+            </div>
+            <CardDetail />
         </div>
-    )
-} 
 
-export default CountryDetail;
+    )
+}
+
+export default CoutryDetail;

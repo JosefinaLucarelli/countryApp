@@ -4,7 +4,8 @@ import App from './App'
 import './index.scss'
 import {  createBrowserRouter,  RouterProvider,} from "react-router-dom";
 import MainPage from './screens/mainPage';
-import CountryDetail from './screens/mainPage/CountryDetail';
+import RegionDetail from './screens/mainPage/RegionDetail';
+import CoutryDetail from './screens/mainPage/CountryDetail';
 
 const router = createBrowserRouter([  
   {    path: "/",
@@ -12,7 +13,11 @@ const router = createBrowserRouter([
   },
   {
     path: "region/:regionName",
-    element: <CountryDetail />
+    element: <RegionDetail />
+  },
+  {
+    path: "country/:countryName",
+    element: <CoutryDetail />
   }
 ]);
 
